@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api'; // change to your backend URL
+import API_BASE_URL from './config';
 
 // Fetch all products
 export async function getProducts() {

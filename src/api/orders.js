@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000/api'; // change to your backend URL
+import API_BASE_URL from './config';
 
 // Create a new order
 export async function createOrder(orderData) {
