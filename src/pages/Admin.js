@@ -64,7 +64,7 @@ function Admin() {
     { id: 1, name: 'Strawberry Cupcake', price: 4.99 },
     { id: 2, name: 'Vanilla Macaron', price: 2.99 },
   ]);
-  const [orders, setOrders] = useState([
+  const [orders] = useState([
     { id: 1, customer: 'Anna', total: 15.98, status: 'Pending' },
     { id: 2, customer: 'Mike', total: 7.98, status: 'Completed' },
   ]);
