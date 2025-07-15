@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import styled from 'styled-components';
 import { CartContext } from '../context/CartContext';
-import { useNavigate } from 'react-router-dom';  // <-- import useNavigate
+import { useNavigate } from 'react-router-dom'; 
 
 const Container = styled.div`
   padding: 2rem;
@@ -49,7 +49,7 @@ const Total = styled.h3`
 
 function CartPage() {
   const { cartItems, removeFromCart, clearCart } = useContext(CartContext);
-  const navigate = useNavigate();  // <-- initialize navigate
+  const navigate = useNavigate(); 
 
   const getTotalPrice = () => {
     return cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0).toFixed(2);
