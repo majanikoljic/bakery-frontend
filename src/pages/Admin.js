@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
@@ -71,12 +71,7 @@ function Admin() {
 
   const [newProduct, setNewProduct] = useState({ name: '', price: '' });
 
-  // useEffect(() => {
-  //   // fetch products and orders from backend here
-  //   // Example:
-  //   // fetch('/api/products').then(res => res.json()).then(setProducts);
-  //   // fetch('/api/orders').then(res => res.json()).then(setOrders);
-  // }, []);
+ 
 
   function handleAddProduct(e) {
     e.preventDefault();
