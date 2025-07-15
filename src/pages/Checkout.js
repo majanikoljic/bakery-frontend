@@ -1,6 +1,6 @@
 import React, { useState, useContext } from 'react';
 import styled from 'styled-components';
-import { CartContext } from '../context/CartContext'; // add this import
+import { CartContext } from '../context/CartContext'; 
 
 const Container = styled.div`
   padding: 2rem;
@@ -37,7 +37,7 @@ const Button = styled.button`
 `;
 
 function Checkout() {
-  const { cartItems, clearCart } = useContext(CartContext); // use context here
+  const { cartItems, clearCart } = useContext(CartContext);
 
   const [formData, setFormData] = useState({
     name: '',
