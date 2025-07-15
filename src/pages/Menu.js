@@ -15,7 +15,7 @@ function Menu() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5001/api/products')  // Your backend URL
+    fetch('http://localhost:5001/api/products')  // backend URL
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error('Failed to fetch products:', err));
