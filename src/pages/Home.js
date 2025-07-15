@@ -23,7 +23,7 @@ const Subtitle = styled.p`
 function Home() {
   return (
     <Hero>
-      <Title>Welcome to Maja’s Bakery</Title>
+      <Title>Welcome to John’s Bakery</Title>
       <Subtitle>Soft. Sweet. Stunning. Discover the joy of handcrafted pastries and delicate treats made with love 💕</Subtitle>
     </Hero>
   );
