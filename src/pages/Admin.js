@@ -71,13 +71,12 @@ function Admin() {
 
   const [newProduct, setNewProduct] = useState({ name: '', price: '' });
 
-  // Example useEffect: you can replace with API fetch calls later
-  useEffect(() => {
-    // fetch products and orders from backend here, then update state
-    // Example:
-    // fetch('/api/products').then(res => res.json()).then(setProducts);
-    // fetch('/api/orders').then(res => res.json()).then(setOrders);
-  }, []);
+  // useEffect(() => {
+  //   // fetch products and orders from backend here
+  //   // Example:
+  //   // fetch('/api/products').then(res => res.json()).then(setProducts);
+  //   // fetch('/api/orders').then(res => res.json()).then(setOrders);
+  // }, []);
 
   function handleAddProduct(e) {
     e.preventDefault();
@@ -134,7 +133,7 @@ function Admin() {
               <span>
                 Order #{order.id} — {order.customer} — ${order.total.toFixed(2)} — {order.status}
               </span>
-              {/* You can add buttons to update status here */}
+              {/* add buttons to update status */}
             </ListItem>
           ))}
         </List>
