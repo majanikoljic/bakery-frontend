@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { registerUser } from '../api/users'; // API helper
+import { registerUser } from '../api/users'; 
 
 function Register() {
   const [name, setName] = useState('');
@@ -12,7 +12,6 @@ function Register() {
       const userData = await registerUser({ name, email, password });
       alert('Registered successfully! 🎉');
       console.log('Registered user:', userData);
-      // Optionally store user info or redirect
       localStorage.setItem('userInfo', JSON.stringify(userData));
     } catch (err) {
       console.error('Registration error:', err);
