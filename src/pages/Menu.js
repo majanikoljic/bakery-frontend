@@ -15,7 +15,7 @@ function Menu() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('https://bakery-backend-ljte.onrender.com')  // backend URL
+    fetch('https://bakery-backend-ljte.onrender.com/api/products')  // backend URL
       .then(res => res.json())
       .then(data => setProducts(data))
       .catch(err => console.error('Failed to fetch products:', err));
